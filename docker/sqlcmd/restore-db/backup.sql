@@ -1,0 +1,1 @@
+backup database MultiCodeLW to disk ='/opt/sqlbk/MultiCodeLW_base.bak' with compression

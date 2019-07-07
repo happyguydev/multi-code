@@ -1,0 +1,9 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://bitbucket.org/marianteam/zf-mc-frontend.git
+[submodule "sql"]
+	path = sql
+	url = https://bitbucket.org/marianteam/trwtrasabilitatesql.git
+[submodule "php"]
+	path = php
+	url = https://bitbucket.org/marianteam/zf-mc-api.git

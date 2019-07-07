@@ -1,0 +1,79 @@
+version: '3.5'
+
+networks:
+  backend:
+
+services:
+
+  # DB server
+  mssql:
+    image: microsoft/mssql-server-linux:2017-latest
+    volumes:
+      - ${BASEDIR:-.}/sql:/opt/sql                                          # the contents of the sql project with upgrade scripts
+      - ${BASEDIR:-.}/docker/sqlcmd/restore-db:/var/opt/mssql/backup        # links to a folder where the initial backup is stored
+      - ${BASEDIR:-.}/dbbk:/opt/sqlbk                                       # folder to store any backups created during runtime
+    environment:
+      - ACCEPT_EULA=y
+      - SA_PASSWORD=TestPasswordH@er@
+    ports:
+      - "1433:1433"
+    expose:
+      - 1433
+    networks:
+      - backend
+    restart: unless-stopped
+
+  # SQL provisioning container
+  # This container checks for the existence of the database, and if it doesn't exist, runs the
+  # provisioning script ./docker/sqlcmd/restore-db/restore.sql, then exits.
+  # Can also be used to get a sqlcmd shell by running 'docker-compose exec sqlcmd sqlcmd'
+  sqlcmd:
+    build: ${BASEDIR:-.}/docker/sqlcmd
+    volumes:
+      - ${BASEDIR:-.}/sql:/opt/sql                                          # the contents of the sql project with upgrade scripts
+      - ${BASEDIR:-.}/docker/sqlcmd/restore-db:/var/opt/mssql/backup:ro     # links to a folder where the initial backup is stored
+      - ${BASEDIR:-.}/dbbk:/opt/sqlbk                                       # folder to store any backups created during runtime
+    command: ["/bin/bash", "/opt/scripts/setupDb.sh"]
+    networks:
+      - backend
+    environment:
+      - doDeployment=0          # whether the upgrade / deployment script should run
+    restart: "no"
+  # PHP Application container w/ apache
+  php:
+    build: ${BASEDIR:-.}/docker/php
+    ports:
+      - "80:80"
+    volumes:
+      - ${BASEDIR:-.}/php:/var/www/html
+      - ${BASEDIR:-.}/sql:/opt/sql
+      - ${BASEDIR:-.}/data/composer-cache:/root/.composer/cache/
+      - ${BASEDIR:-.}/docker/php/default-config/apache/:/etc/apache2/sites-enabled
+    environment:
+      - DB_HOST=mssql
+      - DB_NAME=MultiCodeLW
+      - DB_USER=SA
+      - DB_PASSWORD=TestPasswordH@er@
+      - SHOW_ERRORS=true                                                      # when set, will show debugging info when an error occurs
+      - DEFAULT_LANGUAGE=en                                                   # when set, determines what language will be shown by default
+      - SITE_ROOT_URL=http://localhost/                                       # not used, only API is published
+      - SITE_API_URL=http://localhost/api                                     # address where API can be called
+      - RUN_COMPOSER=true
+      - MultiCodeHostURL="http://localhost:9696?wsdl"                         # dummy address, nothing there
+    networks:
+      - backend
+    restart: unless-stopped
+
+  # # NODE.js machine for the front-end app
+  node:
+    build: ${BASEDIR:-.}/frontend
+    volumes:
+      - ${BASEDIR:-.}/frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - '4200:4200'
+    environment:
+      - NODE_ENV=dev
+    networks:
+      - backend
+    restart: unless-stopped

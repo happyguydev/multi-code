@@ -1,0 +1,5552 @@
+{
+	"info": {
+		"_postman_id": "8f69ea77-a3b9-472a-93e9-7276d001452c",
+		"name": "MultiCode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Workbench",
+			"item": [
+				{
+					"name": "Launch",
+					"item": [
+						{
+							"name": "{{workbenchApiUrl}}/launch-workbench/read-barcode",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{workbenchApiUrl}}/launch-workbench/read-barcode?barcode=34101163A00123456789007",
+									"host": [
+										"{{workbenchApiUrl}}"
+									],
+									"path": [
+										"launch-workbench",
+										"read-barcode"
+									],
+									"query": [
+										{
+											"key": "barcode",
+											"value": "34101163A00123456789007",
+											"description": "a fw or dcNumber"
+										}
+									]
+								},
+								"description": "searches a barcode as fwNumber or dcNumber"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/{{orders}}/{{workbench}}/step1-read-barcode",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"barcode\": \"61234567A1234567890123\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/{{orders}}/{{workbench}}/step1-read-barcode",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"{{orders}}",
+												"{{workbench}}",
+												"step1-read-barcode"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 27 Apr 2019 22:15:56 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "103"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": false,\n    \"content\": null,\n    \"errors\": [\n        {\n            \"en\": \"Cannot find barcode\",\n            \"ro\": \"Codul de bare nu exista\"\n        }\n    ]\n}"
+								},
+								{
+									"name": "{{developerApiUrl}}/{{orders}}/{{workbench}}/step1-read-barcode",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"barcode\": \"34101163A00123456789014\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/{{orders}}/{{workbench}}/step1-read-barcode",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"{{orders}}",
+												"{{workbench}}",
+												"step1-read-barcode"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 27 Apr 2019 22:17:18 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "121"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"content\": {\n        \"dcNumber\": \"34101163A001234567890140000RO1\",\n        \"fwNumber\": \"34101163A00123456789014\",\n        \"fwPartNumberId\": 3910\n    },\n    \"errors\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{workbenchApiUrl}}/launch-workbench/dc-number/launch",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{workbenchApiUrl}}/launch-workbench/1/{{orders}}/1/dc-number/34101163A001234567890070000RO1/launch",
+									"host": [
+										"{{workbenchApiUrl}}"
+									],
+									"path": [
+										"launch-workbench",
+										"1",
+										"{{orders}}",
+										"1",
+										"dc-number",
+										"34101163A001234567890070000RO1",
+										"launch"
+									]
+								},
+								"description": "Attaches an item identified by dcNumber to an order\nLaunches the order\nGenerates an Order Details Document\nAn operator must be logged in on the workbench where the launch is requested"
+							},
+							"response": []
+						},
+						{
+							"name": "{{workbenchApiUrl}}/launch-workbench/confirm-lwnumber",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"orderId\" : 1,\n\t\"lwNumber\" : \"51234567A1234567890123\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/launch-workbench/1/confirm-lwnumber",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"launch-workbench",
+										"1",
+										"confirm-lwnumber"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/{{workbench}}/step3-confirm-lwnumber",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"orderId\" : \"123412343443\",\n\t\"lwNumber\" : \"51234567A1234567890123\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/{{workbench}}/step3-confirm-lwnumber",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"{{workbench}}",
+												"step3-confirm-lwnumber"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"success\" : true,\n\t\"content\" : null,\n\t\"errors\" : []\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "{{workbenchApiUrl}}/login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5dda4645-58b3-49ee-b3fe-08f841468c37",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"if (jsonData.success) {",
+									"    pm.environment.set(\"workbenchSecurityToken\", jsonData.content.token);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"operatorBarcode\" : \"S19999\",\n\t\"operatorPassword\" : \"anything\",\n\t\"workbenchId\" : 1\n}"
+						},
+						"url": {
+							"raw": "{{workbenchApiUrl}}/login",
+							"host": [
+								"{{workbenchApiUrl}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/{{workbench}}/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"automat\",\n\t\"password\" : \"b43af2152cad51991ad79380f45b3140\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{workbench}}/login",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{workbench}}",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\t\"success\":true, \n\t\"content\": {\n\t\t\"token\" : \"ABCDE_FGHIJ_KLMNO_PQRST_UVXYZ\",\n\t\t\"tokenExpires\" : 36000,\n\t\t\"fullName\":\"Larisa Gaina\"\n\t}, \n\t\"errors\" : [] \n}"
+						}
+					]
+				},
+				{
+					"name": "{{workbenchApiUrl}}/logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "19c29448-675b-4832-aec1-48f1c2bb3630",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"if (jsonData.success) {",
+									"    pm.environment.set(\"workbenchSecurityToken\", \"NOT_DEFINED\");",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"operatorBarcode\" : \"S19999\",\n\t\"workbenchId\" : 1\n}"
+						},
+						"url": {
+							"raw": "{{workbenchApiUrl}}/logout",
+							"host": [
+								"{{workbenchApiUrl}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/{{workbench}}/logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"assy\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{workbench}}/logout",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{workbench}}",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+						}
+					]
+				},
+				{
+					"name": "{{workbenchApiUrl}}/workbenches",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5dda4645-58b3-49ee-b3fe-08f841468c37",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{workbenchApiUrl}}/workbenches",
+							"host": [
+								"{{workbenchApiUrl}}"
+							],
+							"path": [
+								"workbenches"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/{{workbench}}/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"automat\",\n\t\"password\" : \"b43af2152cad51991ad79380f45b3140\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{workbench}}/login",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{workbench}}",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\t\"success\":true, \n\t\"content\": {\n\t\t\"token\" : \"ABCDE_FGHIJ_KLMNO_PQRST_UVXYZ\",\n\t\t\"tokenExpires\" : 36000,\n\t\t\"fullName\":\"Larisa Gaina\"\n\t}, \n\t\"errors\" : [] \n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{workbenchSecurityToken}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ffd8b427-e73a-4b99-a6a0-cbe37d64bafd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5021a631-3cc1-449c-b262-e449191aa333",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Management",
+			"item": [
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/edit(NI)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"prodNumber\" : \"12345459845\",\n\t\"version\" : 1,\n\t\"fwPartNumberId\" : 234,\n\t\"lsPartNumber\" : \"12345678A\", \n\t\"thPArtNumberId\" : 34,\n\t\"projectId\" : 123\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/edit",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"edit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/logout",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\" : \"assy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/logout",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"logout"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/accept",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"orderId\" : 1\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/accept",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"accept"
+									]
+								},
+								"description": "Accept an order: transfer it from planned to active"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/logout",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\" : \"assy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/logout",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"logout"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/add-save(NI)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"prodNumber\" : \"12345459845\",\n\t\"version\" : 1\n\t\"fwPartNumberId\" : 234,\n\t\"lsPartNumber\" : \"12345678A\", \n\t\"thPArtNumberId\" : 34,\n\t\"projectId\" : 123\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/add",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"add"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/order/add-save",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\" : \"assy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/order/add-save",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"order",
+												"add-save"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/edit-save(NI)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"prodNumber\" : \"12345459845\",\n\t\"version\" : 1\n\t\"fwPartNumberId\" : 234,\n\t\"lsPartNumber\" : \"12345678A\", \n\t\"thPArtNumberId\" : 34,\n\t\"projectId\" : 123\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/edit-save",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"edit-save"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/logout",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\" : \"assy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/logout",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"logout"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}?top=10&fwPartNumberId=3910&active=true&skip=0",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}"
+									],
+									"query": [
+										{
+											"key": "top",
+											"value": "10",
+											"description": "Maximum orders to show"
+										},
+										{
+											"key": "fwPartNumberId",
+											"value": "3910",
+											"description": "faPartNumber"
+										},
+										{
+											"key": "active",
+											"value": "true",
+											"description": "true shows only active orders, false hides active orders"
+										},
+										{
+											"key": "skip",
+											"value": "0",
+											"description": "items to skip, for pagination"
+										}
+									]
+								},
+								"description": "Gets top active orders filtered by fwPartNumber"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/prodnumber-version",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/get-next-prod-number-version?prodNumber=12345459845",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"get-next-prod-number-version"
+									],
+									"query": [
+										{
+											"key": "prodNumber",
+											"value": "12345459845"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/order/prodnumber-version",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"prodNumber\" : \"12345459845\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/order/prodnumber-version",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"order",
+												"prodnumber-version"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 24 Mar 2019 00:19:36 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/html;charset=UTF-8"
+										}
+									],
+									"cookie": [],
+									"body": "{\n\t\"success\" : true,\n\t\"content\" : 1,\n\t\"errors\" : []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"prodNumber\" : \"12345459845\",\n\t\"fwPartNumber\" : \"34101163A\",\n\t\"lsPartNumber\" : \"LS1234567\", \n\t\"thPartNumber\" : \"69900000A\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/add",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"add"
+									]
+								},
+								"description": "Add an order"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/logout",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\" : \"assy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/logout",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"logout"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/zpl",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/zpl",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"zpl"
+									]
+								},
+								"description": "Gets top active orders filtered by fwPartNumber"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ProjectMapping",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"{{management}}",
+										"project-mapping"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/{{management}}/mapping",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{developerApiUrl}}/{{management}}/mapping",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"{{management}}",
+												"mapping"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"success\" : true,\n\t\"content\" :\n\t\t[\n\t\t\t{\n\t\t\t\t\"no\" : 1,\n\t\t\t\t\"fwPartNumber\" : \"12345678A\",\n\t\t\t\t\"projectName\" : \"P100\",\n\t\t\t\t\"projectDescription\" : \"Audi AQ3 spokes normale\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"no\" : 2,\n\t\t\t\t\"fwPartNumber\" : \"87654321A\",\n\t\t\t\t\"projectName\" : \"P101\",\n\t\t\t\t\"projectDescription\" : \"Audi AQ4 spokes normale\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"no\" : 3,\n\t\t\t\t\"fwPartNumber\" : \"12121212A\",\n\t\t\t\t\"projectName\" : \"P102\",\n\t\t\t\t\"projectDescription\" : \"Renault AQ4 spokes normale\"\n\t\t\t}\n\n\t\t],\n\t\"errors\" : []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping/add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"project\" : 100,\n\t\"fwPartNumber\" : 3886\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping/add",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"{{management}}",
+										"project-mapping",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping/delete",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"project\" : 100,\n\t\"fwPartNumber\" : 3886\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping/delete",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"{{management}}",
+										"project-mapping",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping/active-fwpartnumbers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/{{orders}}/{{management}}/project-mapping/active-fwpartnumbers",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"{{orders}}",
+										"{{management}}",
+										"project-mapping",
+										"active-fwpartnumbers"
+									]
+								},
+								"description": "Gets fw part number which currently are not mapped to any project"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/{{management}}/mapping",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{developerApiUrl}}/{{management}}/mapping",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"{{management}}",
+												"mapping"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"success\" : true,\n\t\"content\" :\n\t\t[\n\t\t\t{\n\t\t\t\t\"no\" : 1,\n\t\t\t\t\"fwPartNumber\" : \"12345678A\",\n\t\t\t\t\"projectName\" : \"P100\",\n\t\t\t\t\"projectDescription\" : \"Audi AQ3 spokes normale\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"no\" : 2,\n\t\t\t\t\"fwPartNumber\" : \"87654321A\",\n\t\t\t\t\"projectName\" : \"P101\",\n\t\t\t\t\"projectDescription\" : \"Audi AQ4 spokes normale\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"no\" : 3,\n\t\t\t\t\"fwPartNumber\" : \"12121212A\",\n\t\t\t\t\"projectName\" : \"P102\",\n\t\t\t\t\"projectDescription\" : \"Renault AQ4 spokes normale\"\n\t\t\t}\n\n\t\t],\n\t\"errors\" : []\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/me/change-password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"newPassword\" : \"81dc9bdb52d04dc20036dbd8313ed055\",\n\t\"oldPassword\" : \"md5_encoded\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/me/change-password",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"me",
+										"change-password"
+									]
+								},
+								"description": "Changes the password for current user"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/me/change-location",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"location\" : 1\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/me/change-location",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"me",
+										"change-location"
+									]
+								},
+								"description": "Changes the location for current user"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/me",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/me",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"me"
+									]
+								},
+								"description": "Get current user's profile"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/profile/666100",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{developerApiUrl}}/profile/666100",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"profile",
+												"666100"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 26 Apr 2019 19:32:15 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "288"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"content\": {\n        \"operatorId\": 666100,\n        \"profileId\": 666100,\n        \"userName\": \"XXXXXXX\",\n        \"firstName\": \"Super\",\n        \"lastName\": \"User\",\n        \"currentLocationId\": 3,\n        \"currentLocationName\": \"Timisoara Positioning\",\n        \"levelId\": 100,\n        \"levelName\": \"Super Users\",\n        \"levelHelp\": \"\",\n        \"businessRole\": \"Superuser\"\n    },\n    \"errors\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/me/check-password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"password\" : \"81dc9bdb52d04dc20036dbd8313ed055\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/me/check-password",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"me",
+										"check-password"
+									]
+								},
+								"description": "Searches for a part number"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/search",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"barcode\": \"62558150E000058198001530000RO1\",\n    \"fwPartNumber\": true,\n    \"lwPartNumber\": false,\n    \"dcPartNumber\": true\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/footer",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"footer"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"success\" : false,\n\t\"content\" : null,\n\t\"errors\" : [{\n\t\t\"en\" : \"FW Number or DC number does not exist\",\n\t\t\"ro\" : \"FW Number sau DC number nu exista\"\n\t\t},{\n\t\t\"en\" : \"DC Number or FW number does not exist\",\n\t\t\"ro\" : \"DC Number sau FW number nu exista\"\n\t\t}]\n}"
+								},
+								{
+									"name": "{{developerApiUrl}}/search",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"barcode\" : \"62558150E000058198001530000RO1\",\n\t\"fwPartNumber\" : true,\n\t\"lwPartNumber\" : false,\n\t\"dcPartNumber\" : true\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/footer",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"footer"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\"success\" : true,\n\"content\" : {\n\t\"state\" : {\n\t\t\"fwNumber\" : \"...\",\n\t\t\"closingStatus\" : \"...\",\n\t\t\"flowStatus\" : \"...\",\n\t\t\"repository\" : \"...\",\n\t\t\"checkIn\" : \"...\",\n\t\t\"isDefect\" : \"...\",\n\t\t\"project\" : \"...\",\n\t\t\"subProject\" : \"...\",\n\t\t\"fwPartNumber\" : \"...\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"dcNumber\" : \"...\"\n\t},\n\t\"operations\" : [{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t}],\n\t\"flow\" : [{\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioned\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}, {\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioning\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}]\n},\n\"errors\" : []\n\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/me/locations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/me/locations",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"me",
+										"locations"
+									]
+								},
+								"description": "Get current user's profile"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/profile/666100",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{developerApiUrl}}/profile/666100",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"profile",
+												"666100"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 26 Apr 2019 19:32:15 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "288"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"content\": {\n        \"operatorId\": 666100,\n        \"profileId\": 666100,\n        \"userName\": \"XXXXXXX\",\n        \"firstName\": \"Super\",\n        \"lastName\": \"User\",\n        \"currentLocationId\": 3,\n        \"currentLocationName\": \"Timisoara Positioning\",\n        \"levelId\": 100,\n        \"levelName\": \"Super Users\",\n        \"levelHelp\": \"\",\n        \"businessRole\": \"Superuser\"\n    },\n    \"errors\": []\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Package",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/package/schema",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/package/schema/1",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"schema",
+										"1"
+									]
+								},
+								"description": "Gets the schema for the read-only view of a package"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/package/schema",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/package/schema/1234",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"package",
+												"schema",
+												"1234"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2019 22:44:24 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "641"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"content\": [\n        {\n            \"id\": 101,\n            \"order\": 1,\n            \"name\": \"barcode\",\n            \"label\": {\n                \"en\": \"Barcode\",\n                \"ro\": \"Cod de bare\"\n            },\n            \"type\": \"string\",\n            \"validator\": {\n                \"mask\": \"00000000A\",\n                \"length\": 9,\n                \"mandatory\": true\n            },\n            \"existingValues\": []\n        },\n        {\n            \"id\": 102,\n            \"order\": 2,\n            \"name\": \"recipe\",\n            \"label\": {\n                \"en\": \"Recipe\",\n                \"ro\": \"Reteta\"\n            },\n            \"type\": \"int\",\n            \"validator\": {\n                \"mask\": \"0000\",\n                \"length\": 4,\n                \"mandatory\": true\n            },\n            \"existingValues\": {\n                \"17\": \"Recipe A\",\n                \"19\": \"Recipe B\",\n                \"21\": \"Recipe C\",\n                \"23\": \"Recipe D\",\n                \"24\": \"Recipe E\",\n                \"37\": \"Recipe F\"\n            }\n        },\n        {\n            \"id\": 103,\n            \"order\": 3,\n            \"name\": \"image\",\n            \"label\": {\n                \"en\": \"Image\",\n                \"ro\": \"Imagine\"\n            },\n            \"type\": \"link\",\n            \"validator\": {\n                \"mask\": null,\n                \"length\": 0,\n                \"mandatory\": false\n            },\n            \"existingValues\": []\n        }\n    ],\n    \"errors\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/package",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"packageTypeId\" : 1,\n\t\"page\" : 0,\n\t\"size\" : 10,\n\t\"filter\" : [\n\t\t{\"columnId\" : 102, \"value\" : \"100\"}\n\t]\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package"
+									]
+								},
+								"description": "Gets the paginated data for the read-only view of a package"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/package",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"packageId\" : 1234,\n\t\"page\" : 0,\n\t\"size\" : 10\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/package",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"package"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2019 22:43:56 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "770"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"content\": {\n        \"data\": [\n            [\n                {\n                    \"value\": 1\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink1\"\n                }\n            ],\n            [\n                {\n                    \"value\": 2\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink2\"\n                }\n            ],\n            [\n                {\n                    \"value\": 3\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink3\"\n                }\n            ],\n            [\n                {\n                    \"value\": 4\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink4\"\n                }\n            ],\n            [\n                {\n                    \"value\": 5\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink5\"\n                }\n            ],\n            [\n                {\n                    \"value\": 6\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink6\"\n                }\n            ],\n            [\n                {\n                    \"value\": 7\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink7\"\n                }\n            ],\n            [\n                {\n                    \"value\": 8\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink8\"\n                }\n            ],\n            [\n                {\n                    \"value\": 9\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink9\"\n                }\n            ],\n            [\n                {\n                    \"value\": 10\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink10\"\n                }\n            ]\n        ],\n        \"pagination\": {\n            \"first\": 0,\n            \"prev\": null,\n            \"next\": 1,\n            \"last\": 1,\n            \"totalItems\": 18,\n            \"firstIndexOnPage\": 0,\n            \"lastIndexOnPage\": 9,\n            \"size\": 10,\n            \"itemsOnPage\": 10\n        }\n    },\n    \"errors\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/schema",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/schema/2",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"schema",
+										"2"
+									]
+								},
+								"description": "Gets the schema for the editable view of a package"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/package/edit/schema",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/package/edit/schema/1",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"package",
+												"edit",
+												"schema",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2019 22:38:37 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "641"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"content\": [\n        {\n            \"id\": 101,\n            \"order\": 1,\n            \"name\": \"barcode\",\n            \"label\": {\n                \"en\": \"Barcode\",\n                \"ro\": \"Cod de bare\"\n            },\n            \"type\": \"string\",\n            \"validator\": {\n                \"mask\": \"00000000A\",\n                \"length\": 9,\n                \"mandatory\": true\n            },\n            \"existingValues\": []\n        },\n        {\n            \"id\": 102,\n            \"order\": 2,\n            \"name\": \"recipe\",\n            \"label\": {\n                \"en\": \"Recipe\",\n                \"ro\": \"Reteta\"\n            },\n            \"type\": \"int\",\n            \"validator\": {\n                \"mask\": \"0000\",\n                \"length\": 4,\n                \"mandatory\": true\n            },\n            \"existingValues\": {\n                \"17\": \"Recipe A\",\n                \"19\": \"Recipe B\",\n                \"21\": \"Recipe C\",\n                \"23\": \"Recipe D\",\n                \"24\": \"Recipe E\",\n                \"37\": \"Recipe F\"\n            }\n        },\n        {\n            \"id\": 103,\n            \"order\": 3,\n            \"name\": \"image\",\n            \"label\": {\n                \"en\": \"Image\",\n                \"ro\": \"Imagine\"\n            },\n            \"type\": \"link\",\n            \"validator\": {\n                \"mask\": null,\n                \"length\": 0,\n                \"mandatory\": false\n            },\n            \"existingValues\": []\n        }\n    ],\n    \"errors\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"packageTypeId\" : 2,\n\t\"session\" : \"{{packageSessionToken}}\",\n\t\"page\" : 0,\n\t\"size\" : 10,\n\t\"filter\" : [\n\t]\n\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit"
+									]
+								},
+								"description": "Gets paginated data for the editable view o a package"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/package/edit",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"packageId\" : 1234,\n\t\"session\" : \"SessionToken\",\n\t\"page\" : 0,\n\t\"size\" : 10\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/package/edit",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"package",
+												"edit"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2019 22:39:50 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.25 (Debian)"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.2.14"
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store, no-cache, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, authorization"
+										},
+										{
+											"key": "Access-Control-Request-Headers",
+											"value": "X-Requested-With, accept, content-type, authorization"
+										},
+										{
+											"key": "Content-Length",
+											"value": "770"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"content\": {\n        \"data\": [\n            [\n                {\n                    \"value\": 1\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink1\"\n                }\n            ],\n            [\n                {\n                    \"value\": 2\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink2\"\n                }\n            ],\n            [\n                {\n                    \"value\": 3\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink3\"\n                }\n            ],\n            [\n                {\n                    \"value\": 4\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink4\"\n                }\n            ],\n            [\n                {\n                    \"value\": 5\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink5\"\n                }\n            ],\n            [\n                {\n                    \"value\": 6\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink6\"\n                }\n            ],\n            [\n                {\n                    \"value\": 7\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink7\"\n                }\n            ],\n            [\n                {\n                    \"value\": 8\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink8\"\n                }\n            ],\n            [\n                {\n                    \"value\": 9\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink9\"\n                }\n            ],\n            [\n                {\n                    \"value\": 10\n                },\n                {\n                    \"value\": 18\n                },\n                {\n                    \"value\": \"http://somelink10\"\n                }\n            ]\n        ],\n        \"pagination\": {\n            \"first\": 0,\n            \"prev\": null,\n            \"next\": 1,\n            \"last\": 1,\n            \"totalItems\": 18,\n            \"firstIndexOnPage\": 0,\n            \"lastIndexOnPage\": 9,\n            \"size\": 10,\n            \"itemsOnPage\": 10\n        }\n    },\n    \"errors\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/action-types",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/action-types",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"action-types"
+									]
+								},
+								"description": "Gets a list of change types available for a package"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/change-description",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\",\n\t\"description\" : \"New description\"\n\t\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/change-description",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"change-description"
+									]
+								},
+								"description": "Changes the description of the package"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/reset-all-records",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/reset-all-records",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"reset-all-records"
+									]
+								},
+								"description": "Resets all records in this package, dismissing all changes"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/set-package-status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/set-status/1",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"set-status",
+										"1"
+									]
+								},
+								"description": "Changes the status of a package: e.g. transitioning to \"submit for review\", \"reject\", \"approve\""
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/open-session",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											"var jsonData = pm.response.json();",
+											"if (jsonData.success) {",
+											"    pm.environment.set(\"packageSessionToken\", jsonData.content.userSession);    ",
+											"    pm.environment.set(\"packageChangeId\", jsonData.content.changeId);",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"packageTypeId\" : 2\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/open-session",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"open-session"
+									]
+								},
+								"description": "Opens a new session for this user and package type.\nThis Postman call will store the session token for subsequent calls. You must implement this in your own app."
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/close-session",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											"var jsonData = pm.response.json();",
+											"if (jsonData.success) {",
+											"    pm.environment.set(\"packageSessionToken\", \"NOT_DEFINED\");",
+											"    pm.environment.set(\"packageChangeId\", 0);",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"changeId\" : \"{{packageChangeId}}\",\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/close-session",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"close-session"
+									]
+								},
+								"description": "Closes a session.\nThis Postman call will reset the session token."
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/get-current-session",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/get-session",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"get-session"
+									]
+								},
+								"description": "Gets the session token for a specific package type"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/add",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"add"
+									]
+								},
+								"description": "Adds a new empty row"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/reset",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/record/1/reset",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"record",
+										"1",
+										"reset"
+									]
+								},
+								"description": "Resets one record in the package"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/clone",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/record/1/clone",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"record",
+										"1",
+										"clone"
+									]
+								},
+								"description": "Clones a record in the package"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/delete",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/record/1/delete",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"record",
+										"1",
+										"delete"
+									]
+								},
+								"description": "Soft deletes a record in the package"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/reactivate",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"session\" : \"{{packageSessionToken}}\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/record/1/reactivate",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"record",
+										"1",
+										"reactivate"
+									]
+								},
+								"description": "Reactivates a soft deleted record"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/package/edit/modify",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"columnValue\" : \"text\"\n\t\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/package/edit/{{packageChangeId}}/record/1/column/102/modify",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"package",
+										"edit",
+										"{{packageChangeId}}",
+										"record",
+										"1",
+										"column",
+										"102",
+										"modify"
+									]
+								},
+								"description": "Changes a value on a line (recordId) and column (columnId) in a given change package (packageChangeId)."
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Functions",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/active-thpartnumbers/print",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/active-thpartnumbers/34101163A/print/3",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"active-thpartnumbers",
+										"34101163A",
+										"print",
+										"3"
+									]
+								},
+								"description": "Prints multiple labels for a thread type"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/search",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"barcode\" : \"62558150E000058198001530000RO1\",\n\t\"fwPartNumber\" : true,\n\t\"lwPartNumber\" : false,\n\t\"dcPartNumber\" : true\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/footer",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"footer"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\"success\" : true,\n\"content\" : {\n\t\"state\" : {\n\t\t\"fwNumber\" : \"...\",\n\t\t\"closingStatus\" : \"...\",\n\t\t\"flowStatus\" : \"...\",\n\t\t\"repository\" : \"...\",\n\t\t\"checkIn\" : \"...\",\n\t\t\"isDefect\" : \"...\",\n\t\t\"project\" : \"...\",\n\t\t\"subProject\" : \"...\",\n\t\t\"fwPartNumber\" : \"...\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"dcNumber\" : \"...\"\n\t},\n\t\"operations\" : [{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t}],\n\t\"flow\" : [{\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioned\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}, {\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioning\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}]\n},\n\"errors\" : []\n\n}"
+								},
+								{
+									"name": "{{developerApiUrl}}/search",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"barcode\": \"62558150E000058198001530000RO1\",\n    \"fwPartNumber\": true,\n    \"lwPartNumber\": false,\n    \"dcPartNumber\": true\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/footer",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"footer"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"success\" : false,\n\t\"content\" : null,\n\t\"errors\" : [{\n\t\t\"en\" : \"FW Number or DC number does not exist\",\n\t\t\"ro\" : \"FW Number sau DC number nu exista\"\n\t\t},{\n\t\t\"en\" : \"DC Number or FW number does not exist\",\n\t\t\"ro\" : \"DC Number sau FW number nu exista\"\n\t\t}]\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/fw-number/refresh-recipe",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/fw-number/34101163A00123456789007/refresh-recipe",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"fw-number",
+										"34101163A00123456789007",
+										"refresh-recipe"
+									]
+								},
+								"description": "Refreshes the recipe on a fwnumber"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/search",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"barcode\": \"62558150E000058198001530000RO1\",\n    \"fwPartNumber\": true,\n    \"lwPartNumber\": false,\n    \"dcPartNumber\": true\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/footer",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"footer"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"success\" : false,\n\t\"content\" : null,\n\t\"errors\" : [{\n\t\t\"en\" : \"FW Number or DC number does not exist\",\n\t\t\"ro\" : \"FW Number sau DC number nu exista\"\n\t\t},{\n\t\t\"en\" : \"DC Number or FW number does not exist\",\n\t\t\"ro\" : \"DC Number sau FW number nu exista\"\n\t\t}]\n}"
+								},
+								{
+									"name": "{{developerApiUrl}}/search",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"barcode\" : \"62558150E000058198001530000RO1\",\n\t\"fwPartNumber\" : true,\n\t\"lwPartNumber\" : false,\n\t\"dcPartNumber\" : true\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/footer",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"footer"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\"success\" : true,\n\"content\" : {\n\t\"state\" : {\n\t\t\"fwNumber\" : \"...\",\n\t\t\"closingStatus\" : \"...\",\n\t\t\"flowStatus\" : \"...\",\n\t\t\"repository\" : \"...\",\n\t\t\"checkIn\" : \"...\",\n\t\t\"isDefect\" : \"...\",\n\t\t\"project\" : \"...\",\n\t\t\"subProject\" : \"...\",\n\t\t\"fwPartNumber\" : \"...\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"dcNumber\" : \"...\"\n\t},\n\t\"operations\" : [{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t}],\n\t\"flow\" : [{\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioned\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}, {\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioning\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}]\n},\n\"errors\" : []\n\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Reports",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/report/01/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/01/render",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"01",
+										"render"
+									]
+								},
+								"description": "Gets the session token for a specific package type"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/02/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/02/prep?month=42&reportName=Report_2SummaryforPayroll",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"02",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "reportName",
+											"value": "Report_2SummaryforPayroll"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/02/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/02/render?month=42&reportName=Report_2LMforPayroll&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"02",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "reportName",
+											"value": "Report_2LMforPayroll"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/03/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/03/render",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"03",
+										"render"
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/defects-by-item/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/defects-by-item/prep?month=42&shift=41",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"defects-by-item",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/defects-by-item/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/defects-by-item/render?month=42&shift=41&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"defects-by-item",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/defects-by-operator/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/defects-by-operator/prep?month=42&shift=41",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"defects-by-operator",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/defects-by-operator/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/defects-by-operator/render?month=42&shift=41&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"defects-by-operator",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/rework-by-item/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/rework-by-item/prep?month=42&shift=41",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"rework-by-item",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/rework-by-item/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/rework-by-item/render?month=42&shift=41&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"rework-by-item",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/rework-by-operator/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/rework-by-operator/prep?month=42&shift=41",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"rework-by-operator",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/04/rework-by-operator/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/04/rework-by-operator/render?month=42&shift=41&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"04",
+										"rework-by-operator",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/05/multiple-rework/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/05/multiple-rework/prep?month=42&shift=41",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"05",
+										"multiple-rework",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/05/multiple-rework/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/05/multiple-rework/render?month=42&dayFrom=1&dayTo=30&shift=41",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"05",
+										"multiple-rework",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										},
+										{
+											"key": "shift",
+											"value": "41"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/07/440-by-process/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/07/440-by-process/prep?month=42",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"07",
+										"440-by-process",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/07/440-by-process/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/07/440-by-process/render?month=42&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"07",
+										"440-by-process",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/07/440-by-project/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/07/440-by-project/prep?month=42",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"07",
+										"440-by-project",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/07/440-by-project/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/07/440-by-project/render?month=42&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"07",
+										"440-by-project",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/08/other-activities/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/08/other-activities/render?fromDate=2019-02-03&toDate=2019-03-15",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"08",
+										"other-activities",
+										"render"
+									],
+									"query": [
+										{
+											"key": "fromDate",
+											"value": "2019-02-03"
+										},
+										{
+											"key": "toDate",
+											"value": "2019-03-15"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/09/unwrapping/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/09/unwrapping/prep?month=42",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"09",
+										"unwrapping",
+										"prep"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										}
+									]
+								},
+								"description": "Gets the filters for the payroll report"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/09/unwrapping/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/09/unwrapping/render?month=42&dayFrom=1&dayTo=30",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"09",
+										"unwrapping",
+										"render"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "42"
+										},
+										{
+											"key": "dayFrom",
+											"value": "1"
+										},
+										{
+											"key": "dayTo",
+											"value": "30"
+										}
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/10/error-codes/render",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/10/error-codes/render",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"10",
+										"error-codes",
+										"render"
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/report/08/other-activities/prep",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/report/08/other-activities/prep",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"report",
+										"08",
+										"other-activities",
+										"prep"
+									]
+								},
+								"description": "Renders the payroll report using filters"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ITReports",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/itreport",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/itreport/1/top/10",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"itreport",
+										"1",
+										"top",
+										"10"
+									]
+								},
+								"description": "Displays reports useful for IT when debugging"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "OtherActivities",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/oactivities/monitor",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/oactivities/monitor",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"oactivities",
+										"monitor"
+									]
+								},
+								"description": "Displays reports useful for IT when debugging"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/oactivities/definitions",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/oactivities/definitions",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"oactivities",
+										"definitions"
+									]
+								},
+								"description": "Displays reports useful for IT when debugging"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/oactivities/signin",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"operatorBarcode\" : \"*S60022*\",\n\t\"activityBarcode\" : \"OA001\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/oactivities/signin",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"oactivities",
+										"signin"
+									]
+								},
+								"description": "Displays reports useful for IT when debugging"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/oactivities/signout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "87c2540c-4253-4764-9616-404f36043e81",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"operatorBarcode\" : \"*S60022*\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/oactivities/signout",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"oactivities",
+										"signout"
+									]
+								},
+								"description": "Displays reports useful for IT when debugging"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Operators",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/operators",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/operators/page/0/size/10?filter=Iulian",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"operators",
+										"page",
+										"0",
+										"size",
+										"10"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": "Iulian"
+										}
+									]
+								},
+								"description": "Returns a filtered and paginated list of operators"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/operator",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/operator/1",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"operator",
+										"1"
+									]
+								},
+								"description": "Returns a single operator"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/operator/change-role",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/operator/4/change-role/1",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"operator",
+										"4",
+										"change-role",
+										"1"
+									]
+								},
+								"description": "Changes the application role of an operator\nRoles are selected from /operator-app-roles"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/operator/create-user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"S60022\",\n\t\"password\" : \"81dc9bdb52d04dc20036dbd8313ed055\",\n\t\"managementRoleId\" : 96\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/operator/4/create-user",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"operator",
+										"4",
+										"create-user"
+									]
+								},
+								"description": "Creates a new user from an operator\n\nmanagementRoleId is a USER management role and should be selected from /user-management-roles"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/operator-app-roles",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/operator-app-roles",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"operator-app-roles"
+									]
+								},
+								"description": "Gets a list of app roles for operators (e.g. productive, non-productive)"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/user-security-level",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/user-security-level",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"user-security-level"
+									]
+								},
+								"description": "Gets a list security levels for users (e.g. super user, business unit manager, it manager, team leader)\nImportant: the list is limited to roles with a lower access level than the current user's role"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "{{developerApiUrl}}/users",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/users/page/0/size/10?filter=Iulian",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"users",
+										"page",
+										"0",
+										"size",
+										"10"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": "Iulian"
+										}
+									]
+								},
+								"description": "Returns a filtered and paginated list of users"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/user-security-level",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/user-security-level",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"user-security-level"
+									]
+								},
+								"description": "Gets a list of security levels assignable to users managed by the requesting user"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/user/locations",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/user/666100/locations",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"user",
+										"666100",
+										"locations"
+									]
+								},
+								"description": "Returns a filtered and paginated list of operators"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/user/location/add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/user/666100/location/3/add",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"user",
+										"666100",
+										"location",
+										"3",
+										"add"
+									]
+								},
+								"description": "Returns a filtered and paginated list of operators"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/user/location/delete",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/user/666100/location/1/delete",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"user",
+										"666100",
+										"location",
+										"1",
+										"delete"
+									]
+								},
+								"description": "Returns a filtered and paginated list of operators"
+							},
+							"response": [
+								{
+									"name": "{{developerApiUrl}}/operators",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"filter\" : \"Cool guy\"\n}"
+										},
+										"url": {
+											"raw": "{{developerApiUrl}}/operators/0/10",
+											"host": [
+												"{{developerApiUrl}}"
+											],
+											"path": [
+												"operators",
+												"0",
+												"10"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n\t\"users\" : [ { \"id\" : 1, \n\t\t\"lastUpdateTimeStamp\" : \"today\", \n\t\t\"barcode\" : \"*S12345*\", \n\t\t\"createTimeStamp\" : \"some time ago\", \n\t\t\"firstName\" : \"John\", \n\t\t\"lastName\" : \"Doe\",\n\t\t\"appRoleId\" : 89 }\n\t\t],\n\t\"pagination\" : {\n\t\t\"first\" : 0,\n\t\t\"prev\" : null,\n\t\t\"next\" : null,\n\t\t\"last\" : 0,\n\t\t\"totalItems\" : 1,\n\t\t\"firstIndexOnPage\" : 0,\n\t\t\"lastIndexOnPage\" : 0,\n\t\t\"size\" : 10,\n\t\t\"itemsOnPage\" : 1}\n}"
+								}
+							]
+						},
+						{
+							"name": "{{developerApiUrl}}/user/change-password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"newPassword\" : \"81dc9bdb52d04dc20036dbd8313ed055\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/user/666283/change-password",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"user",
+										"666283",
+										"change-password"
+									]
+								},
+								"description": "Changes the password for another user"
+							},
+							"response": []
+						},
+						{
+							"name": "{{developerApiUrl}}/user/change-level",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"newSecurityLevel\" : 96\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/user/666283/change-level",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"user",
+										"666283",
+										"change-level"
+									]
+								},
+								"description": "Changes the password for another user"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "{{developerApiUrl}}/managament/login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5dda4645-58b3-49ee-b3fe-08f841468c37",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"if (jsonData.success) {",
+									"    pm.environment.set(\"securityToken\", jsonData.content.token);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"superuser\",\n\t\"password\" : \"81dc9bdb52d04dc20036dbd8313ed055\"\n}"
+						},
+						"url": {
+							"raw": "{{developerApiUrl}}/management/login",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"management",
+								"login"
+							]
+						},
+						"description": "For testing, use credentials:\nusername: S60041\npassword: 1234"
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"automat\",\n\t\"password\" : \"b43af2152cad51991ad79380f45b3140\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/login",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\t\"success\":true, \n\t\"content\": {\n\t\t\"token\" : \"ABCDE_FGHIJ_KLMNO_PQRST_UVXYZ\",\n\t\t\"tokenExpires\" : 36000,\n\t\t\"fullName\":\"Larisa Gaina\"\n\t}, \n\t\"errors\" : [] \n}"
+						}
+					]
+				},
+				{
+					"name": "{{developerApiUrl}}/management/logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3c5ee41b-ef49-4dfa-b024-57933d220e94",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"if (jsonData.success) {",
+									"    pm.environment.set(\"securityToken\", \"NOT_DEFINED\");",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"superuser\"\n}"
+						},
+						"url": {
+							"raw": "{{developerApiUrl}}/management/logout",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"management",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"assy\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/logout",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+						}
+					]
+				},
+				{
+					"name": "{{developerApiUrl}}/active-fwpartnumbers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/active-fwpartnumbers",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"active-fwpartnumbers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{developerApiUrl}}/active-recipes",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/active-recipes",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"active-recipes"
+							]
+						},
+						"description": "Returns the full list of active recipes (without routes)"
+					},
+					"response": []
+				},
+				{
+					"name": "{{developerApiUrl}}/active-projects",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/active-projects",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"active-projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{developerApiUrl}}/active-thpartnumbers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/active-thpartnumbers",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"active-thpartnumbers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "12CBE892-EA78-4C80-B5C3-B2514F7C6FCB",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"assy\"\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/logout",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\t\"content\" : null,\n\t\"success\" : true,\n\t\"errors\" : []\n}"
+						}
+					]
+				},
+				{
+					"name": "{{developerApiUrl}}/lspartnumber/top",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/lspartnumber/top/5",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"lspartnumber",
+								"top",
+								"5"
+							]
+						},
+						"description": "Gets the last Leather Set part numbers used in new orders"
+					},
+					"response": []
+				},
+				{
+					"name": "{{developerApiUrl}}/locations",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/locations",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{developerApiUrl}}/recipes/forFwPartNumber",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/recipes/forFwPartNumber/34101163A",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"recipes",
+								"forFwPartNumber",
+								"34101163A"
+							]
+						},
+						"description": "Returns the full list of active recipes (without routes)"
+					},
+					"response": []
+				},
+				{
+					"name": "{{developerApiUrl}}/recipe-routes",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/recipe-routes",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"recipe-routes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{developerApiUrl}}/management/permissions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/management/permissions/100",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"management",
+								"permissions",
+								"100"
+							]
+						},
+						"description": "Gets data for the footer"
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/permissions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{developerApiUrl}}/permissions/100",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"permissions",
+										"100"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 08 May 2019 00:52:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.25 (Debian)"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.14"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, authorization"
+								},
+								{
+									"key": "Access-Control-Request-Headers",
+									"value": "X-Requested-With, accept, content-type, authorization"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "{{developerApiUrl}}/management/footer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{developerApiUrl}}/management/footer",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"management",
+								"footer"
+							]
+						},
+						"description": "Gets data for the footer"
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/footer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{developerApiUrl}}/footer",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"footer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"copyright\" : \"Copyright ProfiOPS www.profidocs.com @ 2018. Developed for ZF Timisoara\",\n    \"versionLine\" : \"MultiCode v0.0.3\",\n    \"refreshTimeInSeconds\" : \"300\"\n}\n"
+						}
+					]
+				},
+				{
+					"name": "{{developerApiUrl}}/management/search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"barcode\" : \"34101163A00123456789014\",\n\t\"fwPartNumber\" : true,\n\t\"lwPartNumber\" : false,\n\t\"dcPartNumber\" : true\n}"
+						},
+						"url": {
+							"raw": "{{developerApiUrl}}/management/search",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"management",
+								"search"
+							]
+						},
+						"description": "Searches for a part number"
+					},
+					"response": [
+						{
+							"name": "{{developerApiUrl}}/search",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"barcode\": \"62558150E000058198001530000RO1\",\n    \"fwPartNumber\": true,\n    \"lwPartNumber\": false,\n    \"dcPartNumber\": true\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/footer",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"footer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\t\"success\" : false,\n\t\"content\" : null,\n\t\"errors\" : [{\n\t\t\"en\" : \"FW Number or DC number does not exist\",\n\t\t\"ro\" : \"FW Number sau DC number nu exista\"\n\t\t},{\n\t\t\"en\" : \"DC Number or FW number does not exist\",\n\t\t\"ro\" : \"DC Number sau FW number nu exista\"\n\t\t}]\n}"
+						},
+						{
+							"name": "{{developerApiUrl}}/search",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"barcode\" : \"62558150E000058198001530000RO1\",\n\t\"fwPartNumber\" : true,\n\t\"lwPartNumber\" : false,\n\t\"dcPartNumber\" : true\n}"
+								},
+								"url": {
+									"raw": "{{developerApiUrl}}/footer",
+									"host": [
+										"{{developerApiUrl}}"
+									],
+									"path": [
+										"footer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n\"success\" : true,\n\"content\" : {\n\t\"state\" : {\n\t\t\"fwNumber\" : \"...\",\n\t\t\"closingStatus\" : \"...\",\n\t\t\"flowStatus\" : \"...\",\n\t\t\"repository\" : \"...\",\n\t\t\"checkIn\" : \"...\",\n\t\t\"isDefect\" : \"...\",\n\t\t\"project\" : \"...\",\n\t\t\"subProject\" : \"...\",\n\t\t\"fwPartNumber\" : \"...\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"dcNumber\" : \"...\"\n\t},\n\t\"operations\" : [{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t}],\n\t\"flow\" : [{\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioned\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}, {\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioning\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}]\n},\n\"errors\" : []\n\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "{{developerApiUrl}}/barcode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{developerApiUrl}}/barcode/100",
+					"host": [
+						"{{developerApiUrl}}"
+					],
+					"path": [
+						"barcode",
+						"100"
+					]
+				},
+				"description": "Gets data for the footer"
+			},
+			"response": [
+				{
+					"name": "{{developerApiUrl}}/search",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"barcode\" : \"62558150E000058198001530000RO1\",\n\t\"fwPartNumber\" : true,\n\t\"lwPartNumber\" : false,\n\t\"dcPartNumber\" : true\n}"
+						},
+						"url": {
+							"raw": "{{developerApiUrl}}/footer",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"footer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\" : true,\n\"content\" : {\n\t\"state\" : {\n\t\t\"fwNumber\" : \"...\",\n\t\t\"closingStatus\" : \"...\",\n\t\t\"flowStatus\" : \"...\",\n\t\t\"repository\" : \"...\",\n\t\t\"checkIn\" : \"...\",\n\t\t\"isDefect\" : \"...\",\n\t\t\"project\" : \"...\",\n\t\t\"subProject\" : \"...\",\n\t\t\"fwPartNumber\" : \"...\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"dcNumber\" : \"...\"\n\t},\n\t\"operations\" : [{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t},{\n\t\t\"firstName\" : \"...\",\n\t\t\"lastName\" : \"...\",\n\t\t\"operatorBarcode\" : \"...\",\n\t\t\"workbenchName\" : \"...\",\n\t\t\"workbenchType\" : \"...\",\n\t\t\"workbenchTypeDescription\" : \"...\",\n\t\t\"leatherVersion\" : 1,\n\t\t\"defect\" : false,\n\t\t\"rework\" : false,\n\t\t\"countForPayroll\" : true,\n\t\t\"checkIn\" : \"2019-04-05 22:25:07\",\n\t\t\"checkOut\" : \"2019-04-05 22:26:37\"\n\t}],\n\t\"flow\" : [{\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioned\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}, {\n\t\t\"leatherVersion\" : 1,\n\t\t\"timeStamp\" : \"2019-04-05 22:25:07\",\n\t\t\"lwNumber\" : \"...\",\n\t\t\"flowStatus\" : \"Positioning\",\n\t\t\"closingStatus\" : \"Ok\"\n\t}]\n},\n\"errors\" : []\n\n}"
+				},
+				{
+					"name": "{{developerApiUrl}}/search",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"barcode\" : \"62558150E000058198001530000RO1\",\n\t\"fwPartNumber\" : true,\n\t\"lwPartNumber\" : false,\n\t\"dcPartNumber\" : true\n}"
+						},
+						"url": {
+							"raw": "{{developerApiUrl}}/footer",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"footer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n\t\"success\" : false,\n\t\"content\" : null,\n\t\"errors\" : [{\n\t\t\"en\" : \"FW Number or DC number does not exist\",\n\t\t\"ro\" : \"FW Number sau DC number nu exista\"\n\t\t},{\n\t\t\"en\" : \"DC Number or FW number does not exist\",\n\t\t\"ro\" : \"DC Number sau FW number nu exista\"\n\t\t}]\n}"
+				},
+				{
+					"name": "{{developerApiUrl}}/permissions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{developerApiUrl}}/permissions/100",
+							"host": [
+								"{{developerApiUrl}}"
+							],
+							"path": [
+								"permissions",
+								"100"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2019 00:52:00 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.25 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, authorization"
+						},
+						{
+							"key": "Access-Control-Request-Headers",
+							"value": "X-Requested-With, accept, content-type, authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{securityToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c7fd116e-1bfe-4630-894c-a2dbb9068366",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d9b12b1c-52c4-4beb-9ad0-1b18c85a9130",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "5f730201-1da0-4ae3-a402-8feeb55732f8",
+			"key": "developerApiUrl",
+			"value": "http://localhost/api/v1",
+			"type": "string"
+		},
+		{
+			"id": "1c9d2250-c243-4dac-9a19-32a0859d8e0d",
+			"key": "securityToken",
+			"value": "NOT_DEFINED",
+			"type": "string"
+		},
+		{
+			"id": "776406f9-49cf-4c38-b514-8aa6a76be0d2",
+			"key": "workbenchSecurityToken",
+			"value": "NOT_DEFINED",
+			"type": "string"
+		},
+		{
+			"id": "21937e19-cffc-45dc-bd90-4189892de3aa",
+			"key": "workbench",
+			"value": "launch-workbench",
+			"type": "string"
+		},
+		{
+			"id": "3960d59f-89a2-4fc1-a632-083d1c0a8f14",
+			"key": "management",
+			"value": "management",
+			"type": "string"
+		},
+		{
+			"id": "5d20aa18-2073-4a30-8b3c-e1338a6798a6",
+			"key": "orders",
+			"value": "orders",
+			"type": "string"
+		},
+		{
+			"id": "37809b89-b95f-4833-94db-38fd177bca41",
+			"key": "packageSessionToken",
+			"value": "NOT_DEFINED",
+			"type": "string"
+		},
+		{
+			"id": "0f737f20-c34c-4d87-a96d-2f24fa206e02",
+			"key": "packageChangeId",
+			"value": "0",
+			"type": "string"
+		},
+		{
+			"id": "02399b20-ebc8-4834-9c90-198885c79090",
+			"key": "workbenchApiUrl",
+			"value": "http://localhost/api-workbench/v1",
+			"type": "string"
+		}
+	]
+}
